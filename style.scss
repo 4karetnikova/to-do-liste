@@ -1,0 +1,69 @@
+$background-color: #c6394d;
+$even-bgc: #d9d9d9;
+
+.my-to-do-list {
+  width: 30%;
+  height: 45%;
+  border: 2px solid black;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-to-do-list__main {
+  background-color: $background-color;
+  color: rgb(255, 255, 255);
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.my-to-do-list__headline {
+  font-size: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: $background-color;
+  width: 50%;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  height: 50px;
+}
+.to-do-list {
+  background-color: #fdf4f4;
+  padding: 0;
+  margin: 0;
+
+  &__element {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 17px;
+    width: 100%;
+    height: 70px;
+
+    &:nth-child(even) {
+      background-color: $even-bgc;
+    }
+
+    span {
+      font-size: 32px;
+    }
+  }
+}
